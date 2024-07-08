@@ -23,7 +23,8 @@ services:
       context: nodejs
       dockerfile: Dockerfile
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
     networks:
       - app_net
     environment:
