@@ -10,7 +10,7 @@ docker compose up
 
 Depois acesse a url:
 ``` 
-http://localhost/
+http://localhost:8080
 ``` 
 
 Cada vez que atualizar essa página, um novo nome aleatório será adicionado nessa lista
