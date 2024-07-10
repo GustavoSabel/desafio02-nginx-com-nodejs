@@ -5,10 +5,7 @@ Criar uma aplicação com NodeJS + MySQL + Nginx + Docker + Docker Compose
 
 Como executar:
 ```
-cd nodejs
-npm install
-cd ..
-docker compose up
+docker compose up -d
 ``` 
 
 Depois acesse a url:

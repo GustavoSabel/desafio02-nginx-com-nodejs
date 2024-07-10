@@ -19,10 +19,11 @@ services:
       retries: 3
 
   nodejs:
-    build: 
+    build:
       context: nodejs
       dockerfile: Dockerfile
-    entrypoint: node .
+    image: nodejs
+    entrypoint: ["./nodejs-entrypoint.sh"]
     depends_on:
       mysql:
         condition: service_healthy
