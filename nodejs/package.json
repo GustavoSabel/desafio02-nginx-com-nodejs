@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon --watch './src' src/index.js"
   },
   "author": "Gustavo Sabel",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@faker-js/faker": "^8.4.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mysql2": "^3.10.2"
+    "mysql2": "^3.10.2",
+    "nodemon": "^3.1.4"
   }
 }

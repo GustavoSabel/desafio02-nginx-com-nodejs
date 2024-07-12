@@ -23,7 +23,7 @@ services:
       context: nodejs
       dockerfile: Dockerfile
     image: nodejs
-    entrypoint: ["./nodejs-entrypoint.sh"]
+    entrypoint: sh -c "npm install && npm run dev"
     depends_on:
       mysql:
         condition: service_healthy
